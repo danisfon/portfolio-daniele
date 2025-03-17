@@ -32,6 +32,15 @@ body {
     background: #242222;
 }
 
+.secao_habilidades {
+    padding: 50px 20px;
+    background: linear-gradient(0deg, rgba(76, 29, 195, 0.10) 0%, rgba(76, 29, 195, 0.10) 100%), #242222;
+}
+
+
+
+
+
 .sobre_mim {
     display: flex;
     align-items: center;
@@ -64,6 +73,52 @@ body {
 
 
 
+
+
+.educacao {
+    display: flex;
+}
+
+.educacao_curso {
+    padding: 10px 10px 5px 30px;
+    margin-bottom: 20px;
+    width: 259px;
+    height: 81px;
+    flex-shrink: 0;
+    border-radius: 25px;
+    border: 2px solid #9576E3;
+    background: rgba(76, 29, 195, 0.10);
+}
+
+.educao_alinhar_esquerda .educao_alinhar_direita {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subtitulo{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
+.habilidades {
+    display: flex;
+}
+
+
+.habilidade {
+    width: 108px;
+    height: 95px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: rgba(149, 118, 227, 0.50);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
 
 
 
