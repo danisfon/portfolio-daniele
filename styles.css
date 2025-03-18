@@ -4,11 +4,11 @@
 * {
     padding: 0;
     margin: 0;
-    color: #ffffff;
 }
 
 body {
     font-family: "Poppins", sans-serif;
+    color: #ffffff;
 }
 
 .titulo {
@@ -37,29 +37,98 @@ body {
     background: linear-gradient(0deg, rgba(76, 29, 195, 0.10) 0%, rgba(76, 29, 195, 0.10) 100%), #242222;
 }
 
+.secao_projeto {
+    padding: 50px 20px;
+    background: #242222;
+}
 
+
+
+
+/* ORIGINAL */
+
+/*.sobre_mim {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*}*/
+
+/*.sobre_mim_foto {*/
+/*    width: 225px;*/
+/*    height: 225px;*/
+/*    flex-shrink: 0;*/
+/*    border-radius: 50px;*/
+/*    border: 4px solid #9576E3;*/
+/*    background: rgba(36, 34, 34, 0.00);*/
+/*    margin: 20px;*/
+/*}*/
+
+/*.sobre_mim_texto {*/
+/*    margin: 20px;*/
+/*}*/
+
+
+
+
+
+
+
+
+/* TESTE */
+/*.sobre_mim {*/
+/*    display: flex;*/
+/*    width: 100%; !* Garante que ocupa toda a largura da tela *!*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*}*/
+
+/*.foto_container,*/
+/*.texto_container {*/
+/*    width: 50%; !* Cada container ocupa 50% do espaço *!*/
+/*    display: flex;*/
+/*    justify-content: center; !* Centraliza o conteúdo horizontalmente *!*/
+/*    align-items: center; !* Centraliza o conteúdo verticalmente *!*/
+/*}*/
+
+/*.sobre_mim_foto {*/
+/*    width: 225px;*/
+/*    height: 225px;*/
+/*    border-radius: 50px;*/
+/*    border: 4px solid #9576E3;*/
+/*    background: rgba(36, 34, 34, 0.00);*/
+/*    flex-shrink: 0; !* Mantém as dimensões fixas *!*/
+/*}*/
+
+/*.sobre_mim_texto {*/
+/*    margin: 0 20px; !* Mantém espaçamento lateral *!*/
+/*    text-align: left; !* Alinha o texto à esquerda *!*/
+/*}*/
 
 
 
 .sobre_mim {
     display: flex;
+    width: 100%;
+    justify-content: space-between;
     align-items: center;
-}
-
-.sobre_mim_foto .sobre_mim_texto {
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .sobre_mim_foto {
-    width: 230px;
-    height: 238px;
-    flex-shrink: 0;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre_mim_texto {
+    width: 50%;
+    margin: 0 20px;
+    text-align: left;
+}
+
+
+.sobre_mim_foto img {
     border-radius: 50px;
-    border: 4px solid #9576E3;
-    background: rgba(36, 34, 34, 0.00);
 }
 
 .sobre_mim_texto .poppins-extralight {
@@ -70,6 +139,12 @@ body {
     margin-bottom: 10px;
 }
 
+/*.sobre_mim_foto .sobre_mim_texto {*/
+/*    width: 50%;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*}*/
+
 
 
 
@@ -77,11 +152,12 @@ body {
 
 .educacao {
     display: flex;
+    justify-content: center;
 }
 
 .educacao_curso {
     padding: 10px 10px 5px 30px;
-    margin-bottom: 20px;
+    margin: 20px;
     width: 259px;
     height: 81px;
     flex-shrink: 0;
@@ -90,12 +166,6 @@ body {
     background: rgba(76, 29, 195, 0.10);
 }
 
-.educao_alinhar_esquerda .educao_alinhar_direita {
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 .subtitulo{
     text-align: center;
@@ -106,6 +176,7 @@ body {
 
 .habilidades {
     display: flex;
+    justify-content: center;
 }
 
 
@@ -115,12 +186,58 @@ body {
     flex-shrink: 0;
     border-radius: 30px;
     background: rgba(149, 118, 227, 0.50);
-    justify-content: center;
+    margin: 20px;
+    display: flex;
     align-items: center;
+    justify-content: center;
+}
+
+
+.habilidade img {
+    width: 70%;
+    text-align: center;
     display: flex;
 }
 
 
+
+
+.cards {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    border: 2px solid #9576E3;
+    background: linear-gradient(0deg, rgba(76, 29, 195, 0.10) 0%, rgba(76, 29, 195, 0.10) 100%), #242222;
+    margin: 10px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px #0f0f0f;
+    padding: 20px;
+}
+
+
+.card img {
+border-radius: 30px}
+
+.card p {
+    text-align: center;
+    margin: 10px;
+}
+
+.card button {
+    border: 2px solid #9576E3;
+    border-radius: 30px;
+    background: linear-gradient(0deg, rgba(76, 29, 195, 0.10) 0%, rgba(76, 29, 195, 0.10) 100%), #242222;
+    color: #ffffff;
+    padding: 10px;
+    margin: 5px;
+}
+
+.botao {
+    display: flex;
+    justify-content: center;
+}
 
 
 
