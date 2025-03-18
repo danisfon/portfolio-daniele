@@ -54,36 +54,67 @@ hr {
 
 
 
+/*header {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*    padding: 10px 20px;*/
+/*}*/
 
-.principal {
-    display: flex;
-    justify-content: center;
-}
+/*.principal_menu {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    width: 100%;*/
+/*}*/
 
+/*.principal_menu img {*/
+/*    max-height: 50px;*/
+/*}*/
 
-.principal_menu {
-    text-align: right;
-    display: flex;
-    justify-content: right;
-    margin-bottom: 30px;
-}
+/*.principal_menu_texto {*/
+/*    margin-left: auto;*/
+/*    display: flex;*/
+/*    gap: 20px;*/
+/*}*/
 
-.principal_menu p {
-    margin-left: 30px;
-    font-size: 13px;
-}
-
-.principal_texto .poppins-medium {
-    font-size: 50px;
-}
-
-
-.principal_logo img {
-    width: 10%;
-}
+/*.principal_menu_texto p {*/
+/*    margin: 0;*/
+/*    font-family: 'Poppins', sans-serif;*/
+/*    font-weight: 400;*/
+/*    cursor: pointer;*/
+/*}*/
 
 
 
+
+/*.principal_texto .poppins-medium {*/
+/*    font-size: 50px;*/
+/*}*/
+
+
+/*.principal {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*    padding: 20px;*/
+/*}*/
+
+/*.principal_texto {*/
+/*    text-align: left;*/
+/*}*/
+
+/*.principal_foto {*/
+/*    width: 30%;*/
+/*    display: flex;*/
+/*    justify-content: flex-end;*/
+/*}*/
+
+/*.principal_foto img {*/
+/*    max-width: 100%;*/
+/*    height: auto;*/
+/*}*/
+
+/********************** ESTOU FAZENDO TESTE NESSA PARTE **********************/
 
 
 
@@ -118,7 +149,7 @@ hr {
 
 
 
-/* TESTE */
+/********************** EXEMPLO *********************/
 /*.sobre_mim {*/
 /*    display: flex;*/
 /*    width: 100%; !* Garante que ocupa toda a largura da tela *!*/
@@ -262,7 +293,7 @@ hr {
 
 
 .card img {
-border-radius: 30px}
+    border-radius: 30px}
 
 .card p {
     text-align: center;
