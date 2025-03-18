@@ -55,10 +55,17 @@ hr {
 
 
 
+.principal {
+    display: flex;
+    justify-content: center;
+}
+
+
 .principal_menu {
     text-align: right;
     display: flex;
     justify-content: right;
+    margin-bottom: 30px;
 }
 
 .principal_menu p {
@@ -71,6 +78,9 @@ hr {
 }
 
 
+.principal_logo img {
+    width: 10%;
+}
 
 
 
