@@ -54,130 +54,76 @@ hr {
 
 
 
-/*header {*/
-/*    display: flex;*/
-/*    justify-content: space-between;*/
-/*    align-items: center;*/
-/*    padding: 10px 20px;*/
-/*}*/
-
-/*.principal_menu {*/
-/*    display: flex;*/
-/*    align-items: center;*/
-/*    width: 100%;*/
-/*}*/
-
-/*.principal_menu img {*/
-/*    max-height: 50px;*/
-/*}*/
-
-/*.principal_menu_texto {*/
-/*    margin-left: auto;*/
-/*    display: flex;*/
-/*    gap: 20px;*/
-/*}*/
-
-/*.principal_menu_texto p {*/
-/*    margin: 0;*/
-/*    font-family: 'Poppins', sans-serif;*/
-/*    font-weight: 400;*/
-/*    cursor: pointer;*/
-/*}*/
-
-
-
-
-/*.principal_texto .poppins-medium {*/
-/*    font-size: 50px;*/
-/*}*/
-
-
-/*.principal {*/
-/*    display: flex;*/
-/*    justify-content: space-between;*/
-/*    align-items: center;*/
-/*    padding: 20px;*/
-/*}*/
-
-/*.principal_texto {*/
-/*    text-align: left;*/
-/*}*/
-
-/*.principal_foto {*/
-/*    width: 30%;*/
-/*    display: flex;*/
-/*    justify-content: flex-end;*/
-/*}*/
-
-/*.principal_foto img {*/
-/*    max-width: 100%;*/
-/*    height: auto;*/
-/*}*/
 
 /********************** ESTOU FAZENDO TESTE NESSA PARTE **********************/
 
+header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px 20px;
+}
+
+.principal_menu {
+   display: flex;
+   align-items: center;
+   width: 100%;
+}
+
+.principal_menu img {
+   max-height: 60px;
+}
+
+.principal_menu_texto {
+   margin-left: auto;
+   display: flex;
+   gap: 20px;
+}
+
+
+.principal_menu_texto ul {
+    list-style: none; 
+    display: flex;
+    gap: 20px;
+}
+
+
+.principal_menu_texto li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+
+.principal_texto .poppins-medium {
+   font-size: 50px;
+}
+
+.principal {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px;
+}
+
+.principal_texto {
+   text-align: left;
+}
+
+.principal_foto {
+   width: 30%;
+   display: flex;
+   justify-content: flex-end;
+}
+
+.principal_foto img {
+   max-width: 100%;
+   height: auto;
+}
 
 
 
 
-/* ORIGINAL */
-
-/*.sobre_mim {*/
-/*    display: flex;*/
-/*    justify-content: center;*/
-/*    align-items: center;*/
-/*}*/
-
-/*.sobre_mim_foto {*/
-/*    width: 225px;*/
-/*    height: 225px;*/
-/*    flex-shrink: 0;*/
-/*    border-radius: 50px;*/
-/*    border: 4px solid #9576E3;*/
-/*    background: rgba(36, 34, 34, 0.00);*/
-/*    margin: 20px;*/
-/*}*/
-
-/*.sobre_mim_texto {*/
-/*    margin: 20px;*/
-/*}*/
-
-
-
-
-
-
-
-
-/********************** EXEMPLO *********************/
-/*.sobre_mim {*/
-/*    display: flex;*/
-/*    width: 100%; !* Garante que ocupa toda a largura da tela *!*/
-/*    justify-content: space-between;*/
-/*    align-items: center;*/
-/*}*/
-
-/*.foto_container,*/
-/*.texto_container {*/
-/*    width: 50%; !* Cada container ocupa 50% do espaço *!*/
-/*    display: flex;*/
-/*    justify-content: center; !* Centraliza o conteúdo horizontalmente *!*/
-/*    align-items: center; !* Centraliza o conteúdo verticalmente *!*/
-/*}*/
-
-/*.sobre_mim_foto {*/
-/*    width: 225px;*/
-/*    height: 225px;*/
-/*    border-radius: 50px;*/
-/*    border: 4px solid #9576E3;*/
-/*    background: rgba(36, 34, 34, 0.00);*/
-/*    flex-shrink: 0; !* Mantém as dimensões fixas *!*/
-/*}*/
-
-/*.sobre_mim_texto {*/
-/*    margin: 0 20px; !* Mantém espaçamento lateral *!*/
-/*    text-align: left; !* Alinha o texto à esquerda *!*/
-/*}*/
 
 
 
