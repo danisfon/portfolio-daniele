@@ -11,20 +11,12 @@ body {
     background: #242222;
 }
 
-hr {
-    border: 0;
-    height: 1px;
-    background-color: #9576E3;
-}
-
-
 .titulo {
     margin-bottom: 30px;
     font-size: 30px;
     font-weight: 700;
     text-align: center;
 }
-
 
 .secoes {
     padding: 50px 20px;
@@ -37,7 +29,7 @@ hr {
 
 
 
-
+/****************CABEÇALHO****************/
 header {
    display: flex;
    justify-content: space-between;
@@ -45,53 +37,58 @@ header {
    padding: 10px 20px;
 }
 
-.principal_menu {
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #9576E3;
+}
+
+.cabecalho {
    display: flex;
    align-items: center;
    width: 100%;
 }
 
-.principal_menu img {
+.cabecalho img {
    max-height: 60px;
 }
 
-.principal_menu_texto {
+.cabecalho_texto {
    margin-left: auto;
    display: flex;
    gap: 20px;
 }
 
-
-.principal_menu_texto ul {
+.cabecalho ul {
     list-style: none; 
     display: flex;
     gap: 20px;
+    font-size: 13px;
 }
 
-.principal_menu_texto li a {
+.cabecalho li a {
     text-decoration: none;
     color: #ffffff;
 }
 
+
+
+/****************PAGINA INICIAL****************/
+
 .principal_texto .poppins-medium {
-   font-size: 50px;
+   font-size: 40px;
 }
 
 .principal {
    display: flex;
-   justify-content: space-between;
+   justify-content: space-around;
    align-items: center;
-   padding: 20px;
-}
-
-.principal_texto {
-   text-align: left;
+   margin: 100px 0 100px;
 }
 
 .principal_foto {
    width: 30%;
    display: flex;
-   justify-content: flex-end;
 }
 
 .principal_foto img {
@@ -103,7 +100,7 @@ header {
 
 
 
-
+/****************SOBRE MIM****************/
 
 .sobre_mim {
     display: flex;
@@ -134,20 +131,11 @@ header {
     margin-bottom: 15px;
 }
 
-.sobre_mim_texto .poppins-extrabold {
-    margin-bottom: 10px;
-}
-
-/*.sobre_mim_foto .sobre_mim_texto {*/
-/*    width: 50%;*/
-/*    display: flex;*/
-/*    align-items: center;*/
-/*}*/
 
 
 
 
-
+/****************EDUCAÇÃO****************/
 
 .educacao {
     display: flex;
@@ -174,12 +162,11 @@ header {
 
 
 
-
+/****************HABILIDADES****************/
 .habilidades {
     display: flex;
     justify-content: center;
 }
-
 
 .habilidade {
     width: 108px;
@@ -192,7 +179,6 @@ header {
     align-items: center;
     justify-content: center;
 }
-
 
 .habilidade img {
     width: 70%;
@@ -211,6 +197,7 @@ header {
 
 
 
+/****************PROJETOS****************/
 
 .cards {
     display: flex;
@@ -249,18 +236,19 @@ header {
 }
 
 
+
+/****************RODAPE****************/
+
 footer {
     text-align: center;
     padding: 20px 10px;
+    font-size: 10px;
 }
 
 
 
-.poppins-thin {
-    font-family: "Poppins", sans-serif;
-    font-weight: 100;
-    font-style: normal;
-}
+
+
 
 .poppins-extralight {
     font-family: "Poppins", sans-serif;
@@ -304,22 +292,8 @@ footer {
     font-style: normal;
 }
 
-.poppins-black {
-    font-family: "Poppins", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-}
 
-/*.menu-toggle {*/
-/*    display: none;*/
-/*    width: 50px;*/
-/*    background-color: #9576E3;*/
-/*    border: 0;*/
-/*    height: 3px;*/
-/*    cursor: pointer;*/
-/*}*/
-
-@media (max-width: 768px) {
+@media (max-width: 668px) {
     header {
         flex-direction: column; /*exemplo*/
         align-items: flex-start;
@@ -367,4 +341,31 @@ footer {
         height: auto;
     }
 
+    .sobre_mim {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sobre_mim_foto {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .sobre_mim_texto {
+        width: 100%;
+        text-align: center;
+    }
+
+    .educacao {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .educacao_curso {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+        padding: 15px;
+    }
 }
