@@ -293,24 +293,24 @@ footer {
 }
 
 
-@media (max-width: 668px) {
+@media (max-width: 768px) {
     header {
         flex-direction: column; /*exemplo*/
-        align-items: flex-start;
+        padding: 30px 20px;
     }
 
-    .principal_menu img {
+    .cabecalho img {
         margin-bottom: 10px;
         max-height: 60px;
     }
 
-    .principal_menu_texto {
+    .cabecalho_texto {
         flex-direction: column;
         align-items: center;
         gap: 10px;
     }
 
-    .principal_menu_texto ul {
+    .cabecalho_texto ul {
         flex-direction: column;/*exemplo*/
         align-items: center;
         gap: 10px;
@@ -359,13 +359,15 @@ footer {
 
     .educacao {
         flex-direction: column;
-        align-items: center;
     }
 
     .educacao_curso {
         width: 100%;
-        height: auto;
         margin: 10px 0;
         padding: 15px;
+    }
+
+    .subtitulo {
+        text-align: left;
     }
 }
