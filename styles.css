@@ -76,7 +76,7 @@ hr {
 /****************PAGINA INICIAL****************/
 
 .principal_texto .poppins-medium {
-   font-size: 40px;
+   font-size: 60px;
 }
 
 .principal {
@@ -125,6 +125,8 @@ hr {
 
 .sobre_mim_foto img {
     border-radius: 50px;
+    width: 225px; 
+    height: 225px;
 }
 
 .sobre_mim_texto .poppins-extralight {
@@ -214,7 +216,10 @@ hr {
 }
 
 .card img {
-    border-radius: 30px}
+    border-radius: 30px;
+    width: 225px; 
+    height: 225px; 
+}
 
 .card p {
     text-align: center;
