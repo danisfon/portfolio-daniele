@@ -253,6 +253,26 @@ hr {
 
 
 
+/****************CONTATO****************/
+.contact_socials {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .contact_socials a {
+    padding: 8px;
+    color: #ffffff;
+  }
+
+
+
+
+
+
 /****************RODAPE****************/
 
 footer {
@@ -385,5 +405,9 @@ footer {
 
     .subtitulo {
         text-align: left;
+    }
+
+    .cards {
+        flex-direction: column;
     }
 }
