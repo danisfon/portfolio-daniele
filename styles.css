@@ -11,6 +11,11 @@ body {
     background: #242222;
 }
 
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
 .titulo {
     margin-bottom: 30px;
     font-size: 30px;
@@ -19,7 +24,7 @@ body {
 }
 
 .secoes {
-    padding: 50px 20px;
+    padding: 50px 50px;
 }
 
 .secao_claro {
@@ -66,17 +71,14 @@ hr {
     font-size: 13px;
 }
 
-.cabecalho li a {
-    text-decoration: none;
-    color: #ffffff;
-}
 
 
 
 /****************PAGINA INICIAL****************/
 
 .principal_texto .poppins-medium {
-   font-size: 60px;
+    font-size: 55px;
+    padding: 0;
 }
 
 .principal {
@@ -94,6 +96,15 @@ hr {
 .principal_foto img {
    max-width: 100%;
    height: auto;
+}
+
+.principal_texto button {
+    border: 2px solid #9576E3;
+    border-radius: 30px;
+    background: linear-gradient(0deg, rgba(76, 29, 195, 0.10) 0%, rgba(76, 29, 195, 0.10) 100%), #242222;
+    color: #ffffff;
+    padding: 10px;
+    margin: 5px;
 }
 
 
