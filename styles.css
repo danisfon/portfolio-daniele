@@ -71,6 +71,10 @@ hr {
     font-size: 13px;
 }
 
+.ri-align-justify {
+    display: none;
+}
+
 
 
 
@@ -331,8 +335,14 @@ footer {
 
 @media (max-width: 768px) {
     header {
-        flex-direction: column; /*exemplo*/
-        padding: 30px 20px;
+        flex-direction: column;
+        padding: 15px 20px;
+    }
+
+    .ri-align-justify {
+        display: block;
+        color: #9576E3;
+        font-size: 40px;
     }
 
     .cabecalho img {
@@ -340,16 +350,8 @@ footer {
         max-height: 60px;
     }
 
-    .cabecalho_texto {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-
     .cabecalho_texto ul {
-        flex-direction: column;/*exemplo*/
-        align-items: center;
-        gap: 10px;
+        display: none;
     }
 
     .principal_texto {
@@ -358,7 +360,7 @@ footer {
     }
 
     .principal {
-        flex-direction: column;/*exemplo*/
+        flex-direction: column;
         align-items: center;
         text-align: center;
     }
@@ -370,6 +372,7 @@ footer {
     .principal_foto {
         width: auto;
         justify-content: center;
+        margin-top: 40px;
     }
 
     .principal_foto img {
@@ -408,6 +411,12 @@ footer {
     }
 
     .cards {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .habilidades1 {
         flex-direction: column;
     }
 }
