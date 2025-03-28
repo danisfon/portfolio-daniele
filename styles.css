@@ -176,13 +176,24 @@ hr {
 }
 
 
-
+#map {
+    height: 500px;
+    width: 100%;
+    border-radius: 10px;
+}
 
 
 /****************HABILIDADES****************/
 .habilidades {
     display: flex;
     justify-content: center;
+    gap: 10px; 
+    flex-wrap: nowrap; 
+}
+
+.habilidades1 {
+    display: flex;
+    gap: 20px; /* Espaço entre os itens */
 }
 
 .habilidade {

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa - Localização</title>
+    
+    <!-- Link do CSS do Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    
+    <style>
+        #map {
+            height: 500px;
+            width: 100%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Localização: 1583 Av. José Felipe Tequinha, Paranavaí - PR, Brasil</h2>
+    <div id="map"></div>
+
+    <!-- Biblioteca Leaflet.js -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+        // Inicializa o mapa e define as coordenadas do local
+        const map = L.map('map').setView([-23.0811, -52.4657], 15); // Latitude e Longitude aproximadas
+
+        // Adiciona o mapa base do OpenStreetMap
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
+
+        // Adiciona um marcador no local desejado
+        L.marker([-23.0811, -52.4657]).addTo(map)
+            .bindPopup("1583 Av. José Felipe Tequinha, Paranavaí - PR, Brasil")
+            .openPopup();
+    </script>
+
+</body>
+</html>
