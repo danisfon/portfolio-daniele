@@ -193,6 +193,13 @@ hr {
 
 .habilidades1 {
     display: flex;
+    gap: 20px; /* Espaço entre os itens */
+    gap: 10px; 
+    flex-wrap: nowrap; 
+}
+
+.habilidades1 {
+    display: flex;
     gap: 20px; 
 }
 
@@ -440,7 +447,6 @@ footer {
         flex-direction: column;
     }
 }
-
 
 .portfolio_adrian_foto {
     text-align: center;
