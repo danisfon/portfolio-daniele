@@ -8,7 +8,7 @@
 body {
     font-family: "Poppins", sans-serif;
     color: #ffffff;
-    background: #242222;
+    background-color: #242222;
 }
 
 a {
@@ -28,7 +28,6 @@ a {
 }
 
 .secao_claro {
-    padding: 50px 20px;
     background: linear-gradient(0deg, rgba(76, 29, 195, 0.10) 0%, rgba(76, 29, 195, 0.10) 100%), #242222;
 }
 
@@ -36,15 +35,18 @@ a {
 
 /****************CABEÇALHO****************/
 header {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    /*position: sticky;
+    top: 0;
+    background-color: #242222;*/
 }
 
 hr {
     border: 0;
-    height: 1px;
+    height: 2px;
     background-color: #9576E3;
 }
 
@@ -79,7 +81,6 @@ hr {
 
 
 /****************PAGINA INICIAL****************/
-
 .principal_texto .poppins-medium {
     font-size: 55px;
     padding: 0;
@@ -116,7 +117,6 @@ hr {
 
 
 /****************SOBRE MIM****************/
-
 .sobre_mim {
     display: flex;
     width: 100%;
@@ -137,7 +137,6 @@ hr {
     text-align: left;
 }
 
-
 .sobre_mim_foto img {
     border-radius: 50px;
     width: 225px; 
@@ -153,7 +152,6 @@ hr {
 
 
 /****************EDUCAÇÃO****************/
-
 .educacao {
     display: flex;
     justify-content: center;
@@ -176,11 +174,6 @@ hr {
 }
 
 
-#map {
-    height: 500px;
-    width: 100%;
-    border-radius: 10px;
-}
 
 
 /****************HABILIDADES****************/
@@ -193,8 +186,7 @@ hr {
 
 .habilidades1 {
     display: flex;
-    gap: 20px; /* Espaço entre os itens */
-    gap: 10px; 
+    gap: 10px;
     flex-wrap: nowrap; 
 }
 
@@ -233,7 +225,6 @@ hr {
 
 
 /****************PROJETOS****************/
-
 .cards {
     display: flex;
     justify-content: center;
@@ -249,7 +240,7 @@ hr {
 }
 
 .card img {
-    border-radius: 30px;
+    border-radius: 20px;
     width: 225px; 
     height: 225px; 
 }
@@ -275,6 +266,7 @@ hr {
 
 
 
+
 /****************CONTATO****************/
 .contato {
     margin-top: 20px;
@@ -290,22 +282,18 @@ hr {
     color: #ffffff;
 }
 
-
-
-
-/****************MAPA****************/
 #map {
     height: 400px;
     width: 100%;
     border-radius: 10px;
-    margin: 50px 150px;
+    margin-top: 50px;
 }
 
 
 
 
-/****************RODAPE****************/
 
+/****************RODAPE****************/
 footer {
     text-align: center;
     padding: 20px 10px;
@@ -315,51 +303,7 @@ footer {
 
 
 
-
-
-.poppins-extralight {
-    font-family: "Poppins", sans-serif;
-    font-weight: 200;
-    font-style: normal;
-}
-
-.poppins-light {
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-}
-
-.poppins-regular {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.poppins-medium {
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-}
-
-.poppins-semibold {
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-}
-
-.poppins-bold {
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-}
-
-.poppins-extrabold {
-    font-family: "Poppins", sans-serif;
-    font-weight: 800;
-    font-style: normal;
-}
-
-
+/****************MOBILE****************/
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -448,6 +392,10 @@ footer {
     }
 }
 
+
+
+
+/****************HTML PORTFOLIO****************/
 .portfolio_adrian_foto {
     text-align: center;
 }
@@ -461,4 +409,50 @@ footer {
 .portfolio_adrian_texto {
     text-align: justify;
     margin: 50px 150px;
+}
+
+
+
+
+/****************FONTE****************/
+.poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
 }
