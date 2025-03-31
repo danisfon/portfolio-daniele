@@ -4,17 +4,18 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
-       rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="shortcut icon" href="assets/img/logo-identidade.png">
     <title>Portifólio - Daniele</title>
-    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="styles/styles.css"/>
 </head>
 
 <body>
 
 <header>
     <div class="cabecalho">
-        <img src="images/logo-df-df.png">
+        <img src="assets/img/logo-df.png">
         <div class="cabecalho_texto">
             <ul>
                 <li class="poppins-regular"><a href="#sobreMim">Sobre mim</a></li>
@@ -40,7 +41,7 @@
         </div>
 
         <div class="principal_foto">
-            <img src="images/01.png">
+            <img src="assets/img/logo-identidade.png">
         </div>
     </div>
 </section>
@@ -51,7 +52,7 @@
 
     <div class="sobre_mim">
         <div class="sobre_mim_foto">
-            <img src="images/eu.jpg" alt="imagem pessoal">
+            <img src="assets/img/daniele.jpg" alt="imagem pessoal">
         </div>
 
         <div class="sobre_mim_texto">
@@ -117,18 +118,18 @@
     <div class="habilidades">
         <div class="habilidades1">
             <div class="habilidade">
-                <img src="images/php-logo.png" alt="logo php">
+                <img src="assets/img/logo-php.png" alt="logo php">
             </div>
             <div class="habilidade figma">
-                <img src="images/Figma-logo.svg.png" alt="logo figma">
+                <img src="assets/img/logo-figma.png" alt="logo figma">
             </div>
         </div>
         <div class="habilidades1">
             <div class="habilidade">
-                <img src="images/logo-work-bench.png" alt="logo mysql">
+                <img src="assets/img/logo-work-bench.png" alt="logo mysql">
             </div>
             <div class="habilidade js">
-                <img src="images/logo-javascript.png" alt="logo php">
+                <img src="assets/img/logo-javascript.png" alt="logo php">
             </div>
         </div>
     </div>
@@ -141,17 +142,17 @@
     <div class="cards">
 
         <div class="card">
-            <img src="images/adrian.png" alt="arvore">
+            <img src="assets/img/adrian.png" alt="arvore">
             <p class="poppins-semibold">Portfólio Adrian</p>
 
             <div class="botao">
                 <button><a href="https://github.com/danisfon/portfolio-adrian" target="_blank">GitHub</a></button>
-                <button>Acessar</button>
+                <button><a href="portfolio.html" target="_blank">Acessar</a></button>
             </div>
         </div>
 
         <div class="card">
-            <img src="images/ifolha.png" alt="arvore">
+            <img src="assets/img/ifolha.png" alt="arvore">
             <p class="poppins-semibold">IFolha</p>
 
             <div class="botao">
@@ -161,7 +162,7 @@
         </div>
 
         <div class="card">
-            <img src="images/nibbi.png" alt="arvore">
+            <img src="assets/img/nibbi.png" alt="arvore">
             <p class="poppins-semibold">Nibbi</p>
 
             <div class="botao">
@@ -177,7 +178,7 @@
 <section class="secao_claro" id="contato">
     <h2 class="titulo poppins-regular">Contate-me</h2>
 
-    <div class="contact_socials">
+    <div class="contato">
         <a href="https://wa.me/4499999999" target="_blank"><i class="ri-whatsapp-fill"></i></a>
         <a href="https://www.instagram.com/danisfon" target="_blank"><i class="ri-instagram-fill"></i></a>
         <a href="https://www.instagram.com/danisfon" target="_blank"><i class="ri-linkedin-fill"></i></a>
@@ -200,6 +201,9 @@
             </form>
         </div>
     </div> -->
+
+    <div id="map"></div>
+
 </section>
 
 
@@ -207,5 +211,6 @@
     <p class="poppins-light">Todos os direitos reservados a Daniele - danieledasilvafonseca@gmail.com | © 2025 </p>
 </footer>
 
-
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="js/mapa.js"></script>
 </body>
