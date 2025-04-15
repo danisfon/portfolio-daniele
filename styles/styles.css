@@ -31,6 +31,18 @@ a {
     background: linear-gradient(0deg, rgba(76, 29, 195, 0.10) 0%, rgba(76, 29, 195, 0.10) 100%), #242222;
 }
 
+.invisivel {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.aparecendo {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
 
 
 /****************CABEÇALHO****************/
