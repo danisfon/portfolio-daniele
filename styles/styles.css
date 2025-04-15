@@ -17,14 +17,14 @@ a {
 }
 
 .titulo {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     font-size: 30px;
     font-weight: 700;
     text-align: center;
 }
 
 .secoes {
-    padding: 50px 50px;
+    padding: 25px 30px;
 }
 
 .secao_claro {
@@ -127,13 +127,15 @@ hr {
 .sobre_mim_foto {
     width: 50%;
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
+    margin-right: 30px;
 }
 
 .sobre_mim_texto {
     width: 50%;
-    margin: 0 20px;
+    margin: 0 50px;
+    padding-right: 50px;
     text-align: left;
 }
 
@@ -282,12 +284,17 @@ hr {
     color: #ffffff;
 }
 
-#map {
-    height: 400px;
-    width: 100%;
-    border-radius: 10px;
-    margin-top: 50px;
+.contato i {
+    font-size: 20px;
+    margin: 0 3px;
 }
+
+/*#map {*/
+/*    height: 400px;*/
+/*    width: 100%;*/
+/*    border-radius: 10px;*/
+/*    margin-top: 50px;*/
+/*}*/
 
 
 
@@ -360,6 +367,7 @@ footer {
     .sobre_mim_foto {
         width: 100%;
         margin-bottom: 20px;
+        justify-content: center;
     }
 
     .sobre_mim_texto {
