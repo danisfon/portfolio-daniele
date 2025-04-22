@@ -87,6 +87,7 @@ hr {
 
 .ri-align-justify {
     display: none;
+    cursor: pointer;
 }
 
 
@@ -141,13 +142,13 @@ hr {
     display: flex;
     justify-content: right;
     align-items: center;
-    margin-right: 30px;
+    /*margin-right: 30px;*/
 }
 
 .sobre_mim_texto {
     width: 50%;
     margin: 0 50px;
-    padding-right: 50px;
+    /*padding-right: 50px;*/
     text-align: left;
 }
 
@@ -409,6 +410,10 @@ footer {
 
     .habilidades1 {
         flex-direction: column;
+    }
+
+    .habilidade {
+        margin: 5px;
     }
 }
 

@@ -19,16 +19,16 @@
 
         <nav class="cabecalho_texto">
             <ul>
-                <li class="poppins-regular"><a href="#sobreMim">Sobre mim</a></li>
-                <li class="poppins-regular"><a href="#educacao">Educação</a></li>
-                <li class="poppins-regular"><a href="#habilidades">Habilidades</a></li>
-                <li class="poppins-regular"><a href="#projetos">Projetos</a></li>
-                <li class="poppins-regular"><a href="#git">GitHub</a></li>
-                <li class="poppins-regular"><a href="#contato">Contato</a></li>
+                <li class="poppins-regular"><a href="#sobreMim" data-i18n="header.menu.sobreMim">Sobre mim</a></li>
+                <li class="poppins-regular"><a href="#educacao" data-i18n="header.menu.educacao">Educação</a></li>
+                <li class="poppins-regular"><a href="#habilidades" data-i18n="header.menu.habilidades">Habilidades</a></li>
+                <li class="poppins-regular"><a href="#projetos" data-i18n="header.menu.projetos">Projetos</a></li>
+                <li class="poppins-regular"><a href="#git" data-i18n="header.menu.github">GitHub</a></li>
+                <li class="poppins-regular"><a href="#contato" data-i18n="header.menu.contato">Contato</a></li>
             </ul>
         </nav>
 
-        <i class="ri-align-justify"></i>
+        <i class="ri-align-justify" id="menu-toggle"></i>
     </div>
 </header>
 
@@ -39,10 +39,11 @@
         <div class="principal">
 
             <div class="principal_texto">
-                <p class="poppins-light">Olá, eu sou Daniele,</p>
-                <p class="poppins-medium">Desenvolvedora <br> de Software</p>
+                <p class="poppins-light" data-i18n="principal.apresentacao">Olá, eu sou Daniele,</p>
+                <p class="poppins-medium" data-i18n="principal.profissao">Desenvolvedora <br> de Software</p>
                 <button><a href="https://github.com/danisfon" target="_blank">GitHub</a></button>
                 <button>Download CV</button>
+                <button onclick="alterarIdioma()" data-i18n="mudarIdioma">Mudar Idioma</button>
             </div>
 
             <div class="principal_foto">
@@ -54,7 +55,7 @@
 
 
     <section class="secoes secao_claro" id="sobreMim">
-        <h2 class="titulo poppins-regular">Sobre mim</h2>
+        <h2 class="titulo poppins-regular" data-i18n="sobreMim.titulo">Sobre mim</h2>
 
         <div class="sobre_mim">
             <div class="sobre_mim_foto">
@@ -62,13 +63,13 @@
             </div>
 
             <div class="sobre_mim_texto">
-                <p class="poppins-extralight"> Desenvolvedora de software apaixonada por criar soluções inovadoras e eficientes.
+                <p class="poppins-extralight" data-i18n="sobreMim.descricao"> Desenvolvedora de software apaixonada por criar soluções inovadoras e eficientes.
                     Focada em entregar resultados de qualidade, combinando criatividade, lógica e tecnologias de ponta.
                 </p>
-                <p class="poppins-extrabold">Experiência</p>
-                <p class="poppins-extralight">PagHiper - Soluções em pagamentos</p>
-                <p class="poppins-semibold">Desenvolvedor Web - Júnior.</p>
-                <p class="poppins-extralight">2023 - atual</p>
+                <p class="poppins-extrabold" data-i18n="sobreMim.experiencia">Experiência</p>
+                <p class="poppins-extralight" data-i18n="sobreMim.profissao">PagHiper - Soluções em pagamentos</p>
+                <p class="poppins-semibold" data-i18n="sobreMim.cargo">Desenvolvedor Web - Júnior.</p>
+                <p class="poppins-extralight" data-i18n="sobreMim.tempoCargo">2023 - atual</p>
             </div>
         </div>
 
@@ -76,30 +77,30 @@
 
 
     <section class="secoes" id="educacao">
-        <h2 class="titulo poppins-regular">Educação</h2>
+        <h2 class="titulo poppins-regular" data-i18n="educacao.titulo">Educação</h2>
 
         <div class="educacao">
             <div>
                 <div class="subtitulo">
-                    <p class="poppins-bold">Formação</p>
+                    <p class="poppins-bold" data-i18n="educacao.subtitulo1">Formação</p>
                 </div>
 
                 <div class="educacao_curso">
                     <p class="poppins-extralight">IFPR - Campus Paranavai</p>
-                    <p class="poppins-semibold">Tec. Informática</p>
+                    <p class="poppins-semibold" data-i18n="educacao.formacao1">Tec. Informática</p>
                     <p class="poppins-extralight">2019 - 2022</p>
                 </div>
 
                 <div class="educacao_curso">
                     <p class="poppins-extralight">IFPR - Campus Paranavai</p>
-                    <p class="poppins-semibold">Engenharia de Software</p>
+                    <p class="poppins-semibold" data-i18n="educacao.formacao2">Engenharia de Software</p>
                     <p class="poppins-extralight">2023 - 2026</p>
                 </div>
             </div>
 
             <div>
                 <div class="subtitulo">
-                    <p class="poppins-bold">Curso</p>
+                    <p class="poppins-bold" data-i18n="educacao.subtitulo2">Curso</p>
                 </div>
 
                 <div class="educacao_curso">
@@ -110,7 +111,7 @@
 
                 <div class="educacao_curso">
                     <p class="poppins-extralight">Udemy</p>
-                    <p class="poppins-semibold">Dominando Banco de dados</p>
+                    <p class="poppins-semibold" data-i18n="educacao.curso2">Dominando Banco de dados</p>
                     <p class="poppins-extralight">2023 - 2023</p>
                 </div>
             </div>
@@ -120,7 +121,7 @@
 
 
     <section class="secoes secao_claro" id="habilidades">
-        <h2 class="titulo poppins-regular">Habilidades</h2>
+        <h2 class="titulo poppins-regular" data-i18n="habilidades.titulo">Habilidades</h2>
 
         <div class="habilidades">
             <div class="habilidades1">
@@ -145,17 +146,17 @@
 
 
     <section class="secoes" id="projetos">
-        <h2 class="titulo poppins-regular">Projetos</h2>
+        <h2 class="titulo poppins-regular" data-i18n="projetos.titulo">Projetos</h2>
 
         <div class="cards">
 
             <div class="card">
                 <img src="assets/img/adrian.png" alt="portifolio adrian">
-                <p class="poppins-semibold">Portfólio Adrian</p>
+                <p class="poppins-semibold" data-i18n="projetos.projeto1">Portfólio Adrian</p>
 
                 <div class="botao">
                     <button><a href="https://github.com/danisfon/portfolio-adrian" target="_blank">GitHub</a></button>
-                    <button><a href="portfolio.html" target="_blank">Acessar</a></button>
+                    <button><a href="portfolio.html" target="_blank" data-i18n="projetos.botaoAcessar">Acessar</a></button>
                 </div>
             </div>
 
@@ -165,7 +166,7 @@
 
                 <div class="botao">
                     <button><a href="https://github.com/danisfon/IFolha" target="_blank">GitHub</a></button>
-                    <button>Acessar</button>
+                    <button data-i18n="projetos.botaoAcessar">Acessar</button>
                 </div>
             </div>
 
@@ -175,7 +176,7 @@
 
                 <div class="botao">
                     <button><a href="https://github.com/danisfon/projeto-nibbi" target="_blank">GitHub</a></button>
-                    <button>Acessar</button>
+                    <button data-i18n="projetos.botaoAcessar">Acessar</button>
                 </div>
             </div>
         </div>
@@ -183,14 +184,14 @@
 
 
     <section class="secoes secao_claro" id="git">
-        <h2 class="titulo poppins-regular">Meu GitHub</h2>
+        <h2 class="titulo poppins-regular" data-i18n="github.titulo">Meu GitHub</h2>
 
 
     </section>
 
 
     <section class="secoes secao_claro" id="contato">
-        <h2 class="titulo poppins-regular">Contate-me</h2>
+        <h2 class="titulo poppins-regular" data-i18n="contato.titulo">Contate-me</h2>
 
         <div class="contato">
             <a href="https://wa.me/4499999999" target="_blank"><i class="ri-whatsapp-fill"></i></a>
@@ -221,7 +222,7 @@
 </main>
 
 <footer>
-    <p class="poppins-light">Todos os direitos reservados a Daniele - danieledasilvafonseca@gmail.com | © 2025 </p>
+    <p class="poppins-light" data-i18n="footer.descricao">Todos os direitos reservados a Daniele - danieledasilvafonseca@gmail.com | © 2025 </p>
 </footer>
 
 <!-- <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script> -->

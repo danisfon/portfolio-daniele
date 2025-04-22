@@ -1,0 +1,51 @@
+{
+  "header": {
+    "menu": {
+      "sobreMim": "Sobre mim",
+      "educacao": "Educação",
+      "habilidades": "Habilidades",
+      "projetos": "Projetos",
+      "github": "GitHub",
+      "contato": "Contato"
+    }
+  },
+  "principal": {
+    "apresentacao": "Olá, eu sou Daniele,",
+    "profissao": "Desenvolvedora \n de Software"
+  },
+  "sobreMim": {
+    "titulo": "Sobre mim",
+    "descricao": "Desenvolvedora de software apaixonada por criar soluções inovadoras e eficientes. Focada em entregar resultados de qualidade, combinando criatividade, lógica e tecnologias de ponta.",
+    "experiencia": "Experiência",
+    "profissao": "PagHiper - Soluções em pagamentos",
+    "cargo": "Desenvolvedor Web - Júnior.",
+    "tempoCargo": "2023 - atual"
+  },
+  "educacao": {
+    "titulo": "Educação",
+    "subtitulo1": "Formação",
+    "subtitulo2": "Curso",
+    "formacao1": "Tec. Informática",
+    "formacao2": "Engenharia de Software",
+    "curso2": "Dominando Banco de dados"
+  },
+  "habilidades": {
+    "titulo": "Habilidades"
+  },
+  "projetos": {
+    "titulo": "Projetos",
+    "projeto1": "Portfólio - Adrian",
+    "botaoAcessar": "Acessar"
+  },
+  "github": {
+    "titulo": "Meu GitHub"
+  },
+  "contato": {
+    "titulo": "Contate-me"
+  },
+  "footer": {
+    "descricao": "Todos os direitos reservados a Daniele - danieledasilvafonseca@gmail.com | © 2025"
+  },
+  "mudarIdioma": "Mudar Idioma"
+}
+

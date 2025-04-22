@@ -1,0 +1,51 @@
+{
+  "header": {
+    "menu": {
+      "sobreMim": "About Me",
+      "educacao": "Education",
+      "habilidades": "Skills",
+      "projetos": "Projects",
+      "github": "GitHub",
+      "contato": "Contact"
+    }
+  },
+  "principal": {
+    "apresentacao": "Hello, I'm Daniele,",
+    "profissao": "Software Developer"
+  },
+  "sobreMim": {
+    "titulo": "About me",
+    "descricao": "Software developer passionate about creating innovative and efficient solutions. Focused on delivering quality results, combining creativity, logic and cutting-edge technologies.",
+    "experiencia": "Experience",
+    "profissao": "PagHiper - Payment Solutions",
+    "cargo": "Junior Web Developer",
+    "tempoCargo": "2023 - Present"
+  },
+  "educacao": {
+    "titulo": "Education",
+    "subtitulo1": "Academic Background",
+    "subtitulo2": "Course",
+    "formacao1": "Computer Technician",
+    "formacao2": "Software Engineering",
+    "curso2": "Mastering Databases"
+  },
+  "habilidades": {
+    "titulo": "Skills"
+  },
+  "projetos": {
+    "titulo": "Projects",
+    "projeto1": "Portfolio - Adrian",
+    "botaoAcessar": "Access"
+  },
+  "github": {
+    "titulo": "My GitHub"
+  },
+  "contato": {
+    "titulo": "Contact me"
+  },
+  "footer": {
+    "descricao": "All rights reserved to Daniele -  danieledasilvafonseca@gmail.com | © 2025"
+  },
+  "mudarIdioma": "Change language"
+}
+
