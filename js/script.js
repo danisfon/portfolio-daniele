@@ -38,3 +38,33 @@ function alterarIdioma() {
     idiomaAtual = idiomaAtual === "pt" ? "en" : "pt";
     carregarIdioma(idiomaAtual);
 }
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const githubContainer = document.getElementById("github_container");
+
+    fetch(`https://api.github.com/users/danisfon/repos?sort=updated`)
+        .then(response => response.json())
+        .then(async repos => {
+            githubContainer.innerHTML = "";
+
+            const limitedRepos = repos.slice(0, 4);
+
+            for (const repo of limitedRepos) {
+
+                const repoDiv = document.createElement("div");
+                repoDiv.classList.add("repo_card");
+
+                repoDiv.innerHTML = `
+                    <h3><a href="${repo.html_url}" target="_blank">${repo.name}</a></h3>
+                    <small>Atualizado em: ${new Date(repo.updated_at).toLocaleDateString()}</small>
+                `;
+                githubContainer.appendChild(repoDiv);
+
+            }
+
+        })
+        .catch(error => {
+            githubContainer.innerHTML = "<p>Erro ao carregar repositórios.</p>";
+        });
+});

@@ -282,6 +282,39 @@ hr {
 
 
 
+/****************GIT****************/
+
+.github_container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+.repo_card {
+    width: calc(50% - 20px); 
+    border-radius: 20px;
+    padding: 20px;
+    background: rgba(76, 29, 195, 0.10);
+    box-shadow: 0 0 10px #0f0f0f;
+    box-sizing: border-box;
+}
+
+.repo_card h3 a {
+    color: #9576E3;
+    text-decoration: none;
+}
+
+.repo_card p {
+    margin: 10px 0;
+}
+
+
+
+
+
 /****************CONTATO****************/
 .contato {
     margin-top: 20px;
@@ -415,7 +448,13 @@ footer {
     .habilidade {
         margin: 5px;
     }
+
+    .repo-card {
+        width: 100%;
+    }
 }
+
+
 
 
 
