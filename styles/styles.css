@@ -311,6 +311,25 @@ hr {
     margin: 10px 0;
 }
 
+.github-table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    color: #fff;
+    font-size: 14px;
+}
+
+.github-table th, .github-table td {
+    border: 1px solid #9576E3;
+    padding: 10px 15px;
+    text-align: center;
+    background: rgba(76, 29, 195, 0.10);
+}
+
+.github-table th {
+    background-color: #9576E3;
+    color: #fff;
+}
 
 
 
