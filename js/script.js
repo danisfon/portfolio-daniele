@@ -41,20 +41,18 @@ function alterarIdioma() {
 
 
 document.addEventListener("DOMContentLoaded", () => {
-    const githubContainer = document.getElementById("github_container");
+    const githubRepositoriosHtml = document.getElementById("github_repositorios");
     let totalCommits = 0;
     let totalPRs = 0;
+    const repositorios = ["portfolio-daniele", "IFolha", "landing-page-evento-tech", "maven"];
 
-    fetch(`https://api.github.com/users/danisfon/repos?sort=updated`)
-        .then(response => response.json())
-        .then(async repos => {
+    githubRepositoriosHtml.innerHTML = "";
+    document.getElementById("repo_count").textContent = repositorios.length;
 
-            githubContainer.innerHTML = "";
-            const limitedRepos = repos.slice(0, 4);
-            document.getElementById("repo-count").textContent = limitedRepos.length;
-
-            for (const repo of limitedRepos) {
-
+    repositorios.forEach(repoName => {
+        fetch(`https://api.github.com/repos/danisfon/${repoName}`)
+            .then(repoResponse => repoResponse.json())
+            .then(repo => {
                 const repoDiv = document.createElement("div");
                 repoDiv.classList.add("repo_card");
 
@@ -62,26 +60,32 @@ document.addEventListener("DOMContentLoaded", () => {
                     <h3><a href="${repo.html_url}" target="_blank">${repo.name}</a></h3>
                     <small>Atualizado em: ${new Date(repo.updated_at).toLocaleDateString()}</small>
                 `;
-                githubContainer.appendChild(repoDiv);
+                githubRepositoriosHtml.appendChild(repoDiv);
 
-                const [commits, pulls] = await Promise.all([
-                    fetch(repo.commits_url.replace("{/sha}", "")).then(r => r.json()).then(c => c.length).catch(() => 0),
-                    fetch(`https://api.github.com/repos/danisfon/${repo.name}/pulls?state=all`).then(r => r.json()).then(p => p.length).catch(() => 0)
-                ]);
+                fetch(repo.commits_url.replace("{/sha}", ""))
+                    .then(r => r.json())
+                    .then(commits => {
+                        totalCommits += commits.length;
+                        document.getElementById("commit_count").textContent = totalCommits;
+                    })
+                    .catch(() => {
+                        console.error(`Erro ao buscar commits do repositório ${repo.name}`);
+                    });
 
-                totalCommits += commits;
-                totalPRs += pulls;
-
-            }
-
-            document.getElementById("commit-count").textContent = totalCommits;
-            document.getElementById("pr-count").textContent = totalPRs;
-
-        })
-        .catch(error => {
-            githubContainer.innerHTML = "<p>Erro ao carregar repositórios.</p>";
-            console.error("Erro na API do GitHub:", error);
-        });
+                fetch(`https://api.github.com/repos/danisfon/${repo.name}/pulls?state=all`)
+                    .then(r => r.json())
+                    .then(pulls => {
+                        totalPRs += pulls.length;
+                        document.getElementById("pr_count").textContent = totalPRs;
+                    })
+                    .catch(() => {
+                        console.error(`Erro ao buscar PRs do repositório ${repo.name}`);
+                    });
+            })
+            .catch(error => {
+                console.error(`Erro ao buscar dados do repositório ${repoName}:`, error);
+            });
+    });
 });
 
 
