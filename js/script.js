@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 repoDiv.innerHTML = `
                     <h3><a href="${repo.html_url}" target="_blank">${repo.name}</a></h3>
-                    <small>Atualizado em: ${new Date(repo.updated_at).toLocaleDateString()}</small>
+                    <p>Atualizado em: ${new Date(repo.updated_at).toLocaleDateString()}</p>
                 `;
                 githubRepositoriosHtml.appendChild(repoDiv);
 

@@ -44,7 +44,6 @@ a {
 
 
 
-
 /****************CABEÇALHO****************/
 header {
     display: flex;
@@ -300,8 +299,9 @@ hr {
     width: calc(50% - 20px); 
     border-radius: 20px;
     padding: 20px;
-    background: rgba(76, 29, 195, 0.10);
+    background: linear-gradient(0deg, rgba(76, 29, 195, 0.10) 0%, rgba(76, 29, 195, 0.10) 100%),#242222;;
     box-sizing: border-box;
+    box-shadow: 0 0 10px #0f0f0f;
 }
 
 .repo_card h3 a {
@@ -375,7 +375,11 @@ footer {
 }
 
 
-
+@media (min-width: 1468px) {
+    .github_repositorios {
+        padding: 0 450px;
+    }
+}
 
 /****************MOBILE****************/
 @media (max-width: 768px) {
