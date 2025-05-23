@@ -90,7 +90,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-
+document.getElementById('form-contato').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const nome = document.getElementById('nome');
+    const mensagem = document.getElementById('mensagem');
+    const texto = `Olá, meu nome é ${nome}. ${mensagem}`;
+    window.open(`https://wa.me/4499999999?text=${texto}`, '_blank');
+  });
 
 
 

@@ -356,14 +356,60 @@ hr {
     margin: 0 3px;
 }
 
-/*#map {*/
-/*    height: 400px;*/
-/*    width: 100%;*/
-/*    border-radius: 10px;*/
-/*    margin-top: 50px;*/
-/*}*/
+.contato-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
 
+.contato-imagem img {
+  max-width: 400px;
+  height: auto;
+}
 
+.formulario-contato {
+  background-color: linear-gradient(0deg, rgba(76, 29, 195, 0.10) 0%, rgba(76, 29, 195, 0.10) 100%),#242222;
+  padding: 30px;
+  border-radius: 15px;
+  border: 1px solid #8d6bf9;
+  width: 100%;
+  max-width: 500px;
+  box-sizing: border-box;
+}
+
+.formulario-contato form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario-contato label {
+  margin-top: 15px;
+  font-size: 0.95em;
+}
+
+.formulario-contato input,
+.formulario-contato textarea {
+  margin-top: 5px;
+  padding: 10px;
+  background-color: #242222;
+  border: 1px solid #8d6bf9;
+  border-radius: 6px;
+  color: white;
+}
+
+.formulario-contato button {
+  margin-top: 25px;
+  padding: 12px;
+  background-color: #8d6bf9;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
 
 
 
@@ -476,6 +522,20 @@ footer {
 
     .repo-card {
         width: 100%;
+    }
+
+    .contato-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contato-imagem img {
+        width: 80%;
+    }
+
+    .formulario-contato {
+        width: 90%;
     }
 }
 

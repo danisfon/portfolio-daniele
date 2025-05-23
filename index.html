@@ -212,45 +212,37 @@
 
     </section>
 
-
     <section class="secoes" id="contato">
         <h2 class="titulo poppins-regular" data-i18n="contato.titulo">Contate-me</h2>
+        <div class="contato-container">
+            <div class="contato-imagem">
+                <img src="assets/img/logo-identidade.png" alt="Logo">
+            </div>
+            <div class="formulario-contato">
+                <form id="form-contato">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
 
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+                    <button type="submit" class="poppins-bold">ENVIAR</button>
+                </form>
+            </div>
+        </div>
         <div class="contato">
             <a href="https://wa.me/4499999999" target="_blank"><i class="ri-whatsapp-fill"></i></a>
             <a href="https://www.instagram.com/dani" target="_blank"><i class="ri-instagram-fill"></i></a>
             <a href="https://www.instagram.com/dani" target="_blank"><i class="ri-linkedin-fill"></i></a>
             <a href="mailto:daniele@gmail.com" target="_blank"><i class="ri-mail-fill"></i></a>
         </div>
-
-        <!-- <div class="principal_foto">
-            <img src="images/01.png">
-        </div>
-
-        <div class="cards">
-            <div class="card">
-                <form action="">
-                    <label for="nome">Nome</label>
-                    <input type="text" id="nome">
-                    <label for="email">Email</label>
-                    <input type="text" id="email">
-                    <label for="mensagem">Mensagem</label>
-                    <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
-                </form>
-            </div>
-        </div> -->
-
-    <!--    <div id="map"></div>-->
     </section>
 </main>
 
-<footer>
+<footer class="secao_claro">
     <p class="poppins-light" data-i18n="footer.descricao">Todos os direitos reservados a Daniele - danieledasilvafonseca@gmail.com | © 2025 </p>
 </footer>
 
-<!-- <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script> -->
-<!-- <script src="js/mapa.js"></script> -->
-<!--<script src="js/menu.js"></script>-->
 <script src="js/script.js"></script>
 
 </body>
