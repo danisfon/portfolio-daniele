@@ -43,6 +43,10 @@
   "contato": {
     "titulo": "Contate-me"
   },
+  "formulario": {
+    "nome": "Nome:",
+    "mensagem": "Mensagem:"
+  },
   "footer": {
     "descricao": "Todos os direitos reservados a Daniele - danieledasilvafonseca@gmail.com | © 2025"
   },
